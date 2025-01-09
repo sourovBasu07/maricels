@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@layer utilities {
+  @keyframes autoRun {
+    from {
+      left: 100%;
+    }
+    to {
+      left: calc(var(--width) * -1);
+    }
+  }
+
+  @keyframes reverseAutoRun {
+    from {
+      left: calc(var(--width) * -1);
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  .animate-autoRun {
+    animation: autoRun 55s linear infinite;
+    animation-delay: calc(
+      (55s / var(--quantity)) * (var(--position) - 1) - 55s
+    ) !important;
+  }
+
+  .animate-reverseAutoRun {
+    animation: reverseAutoRun 55s linear infinite;
+    animation-delay: calc(
+      (55s / var(--quantity)) * (var(--position) - 1) - 55s
+    ) !important;
+  }
+}
