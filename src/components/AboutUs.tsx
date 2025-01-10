@@ -3,16 +3,16 @@ import SectionTitle from "./SectionTitle";
 
 const AboutUs = () => {
   return (
-    <div className="flex gap-7 -mt-[4.4375rem]">
+    <div className="flex flex-col 3xl:flex-row gap-7 -mt-[4.4375rem]">
       <Image
         src="/images/about_us_image.jpg"
         alt="about us image"
         width={0}
         height={0}
         sizes="100vw"
-        className="w-[38%] h-[700px] object-cover"
+        className="w-full 3xl:w-[38%] h-[328px] lg:h-[500px] 3xl:h-[700px] object-cover"
       />
-      <div className="w-[48%]">
+      <div className="w-full 3xl:w-[48%]">
         <SectionTitle
           sectionName="About Us"
           title="About Our Expert Cleaners in Richmond"

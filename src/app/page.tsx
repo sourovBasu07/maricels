@@ -12,7 +12,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 
 const Homepage = () => {
   return (
-    <div className="container">
+    <div className="">
       <Hero />
       <div className="space-y-[120px]">
         <Ratings />

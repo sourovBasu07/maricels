@@ -26,9 +26,9 @@ const ServiceAreas = () => {
         sectionName="Service Area"
         center
       />
-      <div className="flex gap-[2.625rem]">
+      <div className="flex gap-[2.625rem] overflow-hidden">
         {serviceAreas.map((area, index) => (
-          <div key={index} className="odd:translate-y-8">
+          <div key={index} className="min-w-full odd:translate-y-8 px-20">
             <div
               className=""
               dangerouslySetInnerHTML={{ __html: area.link }}
@@ -39,7 +39,7 @@ const ServiceAreas = () => {
           </div>
         ))}
       </div>
-      <div className="max-w-[1350px] mx-auto flex items-center gap-8 mt-6">
+      <div className="max-w-[1350px] mx-auto flex items-center gap-8 mt-6 px-[1.875rem]">
         <div className="h-[2px] flex flex-1 bg-primary" />
         <div className="flex gap-4">
           <button

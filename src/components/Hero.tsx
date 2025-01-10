@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="w-full h-[782px] flex">
-      <div className="w-[53%] h-full relative">
+      <div className="w-full 3xl:w-[53%] h-full relative">
         <Image
           src="/images/hero_image1.jpg"
           alt="Hero image"
@@ -12,9 +12,9 @@ const Hero = () => {
           sizes="100vw"
           className="w-full h-full object-cover opacity-15"
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-[#D0AA3859] flex flex-col justify-center">
-          <div className="w-[663px] space-y-3 ml-auto mr-10">
-            <h1 className="font-bold text-[3.4375rem] leading-[4.5rem] text-black">
+        <div className="absolute top-0 left-0 w-full h-full bg-[#D0AA3859] flex flex-col justify-center max-md:px-[30px]">
+          <div className="w-full xl:w-[663px] space-y-3 3xl:ml-auto 3xl:mr-10">
+            <h1 className="font-bold text-4xl md:text-5xl xl:text-[3.4375rem] leading-[3rem] md:leading-[4rem] xl:leading-[4.5rem] text-black">
               Cleaning Services <br />{" "}
               <span className="text-primary">in Richmond</span>
             </h1>
@@ -23,7 +23,7 @@ const Hero = () => {
               offers top-notch, reliable, and professional cleaning services in
               Richmond.
             </p>
-            <button className="flex items-center bg-[#FBCC21] px-14 py-4 text-black text-lg font-bold shadow-[2px_2px_2px_rgba(0,0,0,0.25)]">
+            <button className="flex items-center bg-[#FBCC21] px-4 xl:px-14 py-2 xl:py-4 text-black text-lg font-bold shadow-[2px_2px_2px_rgba(0,0,0,0.25)]">
               Get an Estimate
               <Image
                 src="/icons/arrow_icon.svg"
@@ -36,7 +36,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative w-[47%]">
+      <div className="relative hidden xl:block w-[47%]">
         <Image
           src="/images/hero_image2.jpg"
           alt="hero_image"

@@ -18,7 +18,7 @@ const ProjectsGallery = () => {
   ];
 
   return (
-    <div className="space-y-[120px]">
+    <div className="hidden md:block space-y-[120px]">
       <div className="">
         <SectionTitle
           title="Maricela's Cleaning Magnificence Gallery Of Past Projects"

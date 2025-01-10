@@ -19,7 +19,7 @@ const Services = () => {
           description="Maricela's Cleaning Magnificence offers top-tier professional cleaning services in Richmond. With a dedicated team of experienced cleaners, we specialize in both residential and commercial spaces, ensuring your home or office sparkles with cleanliness. Our services include deep cleaning, regular maintenance, move-in/move-out cleaning, and customized cleaning plans tailored to your needs. We offer flexible scheduling to accommodate your busy lifestyle, and our competitive pricing ensures you get the best value for your investment. Whether it's a one-time deep clean or regular upkeep, our professional cleaning company is here to make your life easier and your spaces shine. Our cleaners also offer"
           center
         />
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {servicesData.map((service) => (
             <div
               key={service.title}
@@ -45,8 +45,8 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-end gap-7">
-        <div className="w-[50%]">
+      <div className="flex flex-col-reverse 3xl:flex-row justify-end gap-7">
+        <div className="w-full 3xl:w-[50%]">
           <SectionTitle
             title="Keep Your Home Clean and Fresh"
             sectionName="Clean and Fresh"
@@ -54,14 +54,14 @@ const Services = () => {
               Maricela's Cleaning Magnificence offers exceptional cleaning services to keep your home spotless and refreshing. Our experienced team provides customized cleaning solutions, from deep cleaning to routine maintenance, ensuring every area of your home shines. We use high-quality, eco-friendly products and advanced techniques for effective results, making your living space healthier and more inviting. With flexible cleaning packages designed to fit your budget and needs, we cater to everything from seasonal clean-ups to ongoing upkeep. Our trustworthy, trained staff treat your home carefully, ensuring your belongings are safe. At Maricela's Cleaning Magnificence, we’re committed to your satisfaction, and you’ll be delighted with our work. Enjoy a cleaner, fresher home with our reliable, professional cleaning services! Don't wait—elevate your living space with our exceptional cleaning services today!`}
           />
         </div>
-        <div className="w-[35%] flex flex-col">
+        <div className="w-full 3xl:w-[35%] flex flex-col">
           <Image
             src="/images/clean_image1.jpg"
             alt="clean image"
             width={0}
             height={0}
             sizes="100vw"
-            className="w-[551px] h-[411px] object-cover rounded-2xl flex self-end"
+            className="w-[371px] 3xl:w-[551px] h-[311px] 3xl:h-[411px] object-cover rounded-2xl flex self-end"
           />
           <div className="flex justify-between items-start">
             <Image
@@ -70,20 +70,20 @@ const Services = () => {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-[421px] h-[334px] object-cover rounded-2xl border-[.625rem] border-white -translate-y-[2.8125rem] shadow-[0_0_6px_rgba(0,0,0,0.5)]"
+              className="w-[284px] 3xl:w-[421px] h-[253px] 3xl:h-[334px] object-cover rounded-2xl border-[.625rem] border-white -translate-y-[2.8125rem] shadow-[0_0_6px_rgba(0,0,0,0.5)]"
             />
-            <div className="bg-primary rounded-2xl mt-8 px-10 py-6 text-center">
-              <p className="font-bold text-[3.4375rem] text-white leading-[4.5rem]">
+            <div className="bg-primary rounded-2xl mt-8 px-3 3xl:px-10 py-6 text-center">
+              <p className="font-bold text-2xl md:text-3xl xl:text-5xl 3xl:text-[3.4375rem] text-white leading-[2rem] lg:leading-[3rem] 3xl:leading-[4.5rem]">
                 5+
               </p>
-              <p className="font-bold text-2xl text-white text-center">
+              <p className="font-bold text-lg lg::text-xl 3xl:text-2xl text-white text-center">
                 Successful <br /> Years
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="max-w-[1350px] mx-auto flex gap-7">
+      <div className="max-w-[1350px] mx-auto flex flex-col 3xl:flex-row gap-7">
         <div className="flex flex-col">
           <div className="flex gap-4">
             <Image
@@ -92,7 +92,7 @@ const Services = () => {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-[353px] h-[331px] object-cover rounded-2xl"
+              className="w-[204px] 3xl:w-[353px] h-[192px] 3xl:h-[331px] object-cover rounded-2xl"
             />
             <Image
               src="/images/home_image2.jpg"
@@ -100,21 +100,21 @@ const Services = () => {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-[286px] h-[248px] object-cover rounded-2xl"
+              className="w-[165px] 3xl:w-[286px] h-[144px] 3xl:h-[248px] object-cover rounded-2xl"
             />
           </div>
-          <div className="w-[425px] h-[316px] flex self-end rounded-2xl -translate-y-[4.375rem]">
+          <div className="w-[246px] 3xl:w-[425px] h-[183px] 3xl:h-[316px] flex self-end rounded-2xl -translate-y-[4.375rem]">
             <Image
-              src="/images/home_image1.jpg"
+              src="/images/home_image3.jpg"
               alt="home image"
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-full object-cover rounded-2xl shadow-[0_0_6px_rgba(0,0,0,0.5)] border-[1rem] border-white"
+              className="w-full h-full object-cover rounded-2xl shadow-[0_0_6px_rgba(0,0,0,0.5)] border-[.5rem] border-white"
             />
           </div>
         </div>
-        <div className="w-[686px]">
+        <div className="w-full 3xl:w-[686px]">
           <SectionTitle
             title="Home Cleaning Services Richmond"
             sectionName="Home Cleaning"
@@ -122,7 +122,7 @@ const Services = () => {
           />
         </div>
       </div>
-      <div className="flex gap-8 ml-[14%]">
+      <div className="flex flex-col-reverse 3xl:flex-row gap-8 3xl:ml-[14%]">
         <div className="flex flex-1">
           <SectionTitle
             title="House Cleaning Services Richmond"
@@ -142,7 +142,7 @@ const Services = () => {
         </div>
       </div>
       <div className="space-y-6">
-        <div className="flex justify-center gap-6">
+        <div className="flex flex-col lg:flex-row justify-center gap-6">
           {[
             "Residential Cleaning Services Richmond",
             "Commercial Cleaning Services Richmond Hill",
@@ -153,7 +153,7 @@ const Services = () => {
                 item === serviceType
                   ? "bg-primary text-white"
                   : "bg-[#D2D2D2] text-black"
-              } px-10 py-4 font-bold text-xl cursor-pointer`}
+              } px-3 lg:px-10 py-4 font-bold text-lg lg:text-xl text-center whitespace-nowrap cursor-pointer`}
               onClick={() => setServiceType(item)}
             >
               {item}
@@ -168,7 +168,7 @@ const Services = () => {
             center
           />
         </div>
-        <div className="relative w-full h-[600px]">
+        <div className="hidden relative w-full h-[600px]">
           <Image
             src="/images/service_type_image.jpg"
             alt="service type image"

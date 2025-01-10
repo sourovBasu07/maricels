@@ -17,7 +17,7 @@ Choosing our cleaning company means choosing a cleaning service that not only cl
           {specialData.map((item, index) => (
             <div
               key={index}
-              className="bg-[#F7F7F7] border border-[#AFAFAF] rounded-[1.25rem] p-6 flex flex-col items-start gap-[.625rem] last:col-span-2"
+              className="bg-[#F7F7F7] border border-[#AFAFAF] rounded-[1.25rem] p-6 flex flex-col items-start gap-[.625rem] 3xl:last:col-span-2"
             >
               <div className="w-[6.25rem] h-[6.25rem] flex justify-center items-center bg-white rounded-full shadow-[0_0_6px_rgba(0,0,0,0.25)]">
                 <Image

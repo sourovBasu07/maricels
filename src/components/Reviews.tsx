@@ -19,7 +19,7 @@ const ReviewCard = ({
   review: string;
 }) => {
   return (
-    <div className="w-full h-[326px] flex flex-col justify-between">
+    <div className="min-w-full h-[326px] flex flex-col justify-between max-md:px-14">
       <div className="space-y-[.375rem]">
         <Image
           src={icon}
@@ -68,16 +68,16 @@ const Reviews = () => {
   return (
     <div className="max-w-[1350px] mx-auto">
       <div className="flex justify-center">
-        <div className="grid grid-cols-4 gap-4">
+        <div className="flex flex-col-reverse 3xl:grid grid-cols-4 gap-4">
           <div className="grid col-span-3">
-            <div className="grid grid-cols-3">
+            <div className="flex 3xl:grid grid-cols-3 overflow-hidden">
               {reviewsData
                 .slice(currentIndex, currentIndex + 3)
                 .map((review, index) => (
                   <ReviewCard key={index} {...review} />
                 ))}
             </div>
-            <div className="flex items-center gap-8 mt-6">
+            <div className="flex items-center gap-8 mt-6 px-[1.875rem]">
               <div className="h-[2px] flex flex-1 bg-primary" />
               <div className="flex gap-4">
                 <button

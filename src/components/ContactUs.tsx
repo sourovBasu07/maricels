@@ -26,8 +26,8 @@ const Input = ({
 
 const ContactUs = () => {
   return (
-    <div className="flex justify-between items-center pl-[183px] pr-[102px]">
-      <div className="w-[603px] space-y-14">
+    <div className="flex flex-col-reverse 3xl:flex-row justify-between items-center 3xl:pl-[285px]">
+      <div className="w-full 3xl:w-[603px] space-y-14 px-[1.875rem] 3xl:px-0">
         <h2 className="font-bold text-[2rem] leading-[2.625rem] text-primary">
           Give Us Feedback
         </h2>
@@ -58,16 +58,16 @@ const ContactUs = () => {
           />
         </button>
       </div>
-      <div className="relative w-[614px] h-[666px]">
+      <div className="relative w-full">
         <Image
           src="/images/contact_us_image.jpg"
           alt="contact us image"
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full h-full object-cover"
+          className="w-full 3xl:w-[614px] h-[469px] 3xl:h-[666px] object-cover"
         />
-        <div className="absolute top-[180px] -left-[336px] flex flex-col gap-6 bg-primary rounded-[.5625rem] shadow-[0_0_9px_rgba(0,0,0,0.5)] px-7 py-10">
+        <div className="3xl:absolute top-[180px] left-[50%] -translate-y-10 max-md:w-[calc(100%-60px)] flex flex-col gap-6 bg-primary rounded-[.5625rem] shadow-[0_0_9px_rgba(0,0,0,0.5)] mx-auto px-7 py-5 xl:py-10">
           <p className="font-bold text-[2rem] leading-[2.625rem] text-white">
             Contact Us
           </p>
@@ -98,7 +98,7 @@ const ContactUs = () => {
               width={23}
               height={23}
             />
-            <p className="text-white">
+            <p className="text-white break-all">
               maricela.maldonado@maricelasmagnificence.com
             </p>
           </div>

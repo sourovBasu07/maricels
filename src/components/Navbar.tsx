@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="">
-      <div className="flex items-center pt-1 pb-2">
+      <div className="hidden lg:flex items-center pt-1 pb-2">
         <div className="">
           <div className="flex items-center gap-4 ml-[285px]">
             <Image
@@ -79,6 +79,41 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="w-full flex lg:hidden flex-col items-center gap-1 px-[1.875rem] pt-5 pb-3">
+        <div className="w-full flex justify-between items-center">
+          <button className="flex items-center bg-[#FBCC21] px-3 py-[.375rem] rounded-md text-black text-base font-bold shadow-[2px_2px_2px_rgba(0,0,0,0.25)]">
+            Get an Estimate
+            <Image
+              src="/icons/arrow_icon.svg"
+              alt="arrow icon"
+              width={10}
+              height={5}
+              className="ml-2"
+            />
+          </button>
+          <button className="flex items-center bg-[#FBCC21] px-3 py-[.375rem] rounded-md text-black text-base font-bold shadow-[2px_2px_2px_rgba(0,0,0,0.25)]">
+            <Image
+              src="/icons/phone_icon.png"
+              alt="phone icon"
+              width={22}
+              height={22}
+            />
+            Click to Call
+          </button>
+          <Image
+            src="/icons/nav_menu_icon.png"
+            alt="nav menu icon"
+            width={23}
+            height={23}
+          />
+        </div>
+        <Image
+          src="/images/company_logo.png"
+          alt="company logo"
+          width={124}
+          height={56}
+        />
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const Accordion = ({
   };
 
   return (
-    <div className="w-full max-w-[1350px] space-y-1 mx-auto">
+    <div className="w-full max-w-[1350px] space-y-1 mx-auto max-xl:px-[1.875rem]">
       {data.map((item, index) => (
         <div key={index} className="border-b border-gray-300">
           <div
